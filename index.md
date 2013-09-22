@@ -8,7 +8,7 @@ layout: page
     <li>
       <span>{{ post.date | date_to_string }}</span> &raquo;
       <h3>{{ post.title }}</h3>
-      <p>{{ post.content | strip_html | truncate:300 }}<strong> ... <a href="{{ BASE_PATH }}{{ post.url }}">Read More</a></strong></p>
+      <p>{{ post.content | strip_html | truncate:200 }}<strong> - <a href="{{ BASE_PATH }}{{ post.url }}">Read More</a></strong></p>
       <hr>
     </li>
   {% endfor %}
